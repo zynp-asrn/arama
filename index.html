@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>Document</title>
+
+    <style>
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-main{
+    background-color: rgb(55, 61, 61);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 40px;
+    
+
+}
+
+.tbox-search{
+    float: left;
+    background: none;
+    border:  none;
+    outline: none;
+    color: aliceblue;
+    font-size: 16px;
+    width: 0px;
+    transition: 1s;
+}
+
+.btn-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    font-size: 16px;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+
+.search-main:hover > .tbox-search{
+    width: 200px;
+}
+    </style>
+</head>
+<body>
+    <div class="search-main">
+        <input type="text" class="tbox-search">
+        <a class="btn-search">
+            <i class="fa fa-search"></i>
+        </a>
+
+    </div>
+</body>
+</html>
